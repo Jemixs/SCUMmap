@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^index\.html?$ / [NC,R,L]
+RewriteRule ^/([a-z]+)$ ?map=$1 [L]
+RewriteRule ^([^/.]+)$ $1.php [L]
